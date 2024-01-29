@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+:root {
+    --pink-bg: #ffd9e8;
+    --pink-bg-li: #fef0f6;
+    --pink-bg-light: #ffd9e87d;
+    --pink-hvr: #de95ba;
+    --teal-btn: #407088;
+    --teal-shadow: #40708872;
+    --linear-gra: linear-gradient(to right, #ffd9e8, #de95ba, #7f4a88, #4a266a);
+}
+.story-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    row-gap: 40px;
+}
+.story-day-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.story-group-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--pink-bg-li);
+    border-radius: 10px;
+    padding: 15px;
+    gap: 20px;
+    width: 100%;
+    min-height: 300px;
+}
+.story-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.story-box {
+    width: 100%;
+    background-color: var(--pink-bg);
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+.story-box p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.continue {
+    font-style: italic;
+    font-size: 15px;
+    text-align: right;
+    color: gray;
+    cursor: pointer;
+}
+.continue:hover {
+    color: #407088;
+    font-weight: bold;
+}

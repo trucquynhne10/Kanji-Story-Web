@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanji Story | Create a story</title>
+    <link rel="icon" type="image/x-icon" href="./images/loho.png" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/story.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="box-img-left">
+          <a href="index.html"><img src="./images/loho.png" alt="" /></a>
+        </div>
+        <div class="box-img-center">
+          <a href="index.html"><img src="./images/kanjistory.png" alt="" /></a>
+        </div>
+        <div class="box-right">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-main">
+        <div class="menu">
+          <a class="menu-sub" href="basic.html">Basic Kanji</a>
+          <a class="menu-sub active" href="story.html">Create a story</a>
+          <a class="menu-sub" href="long_story.html">Create a long story</a>
+          <a class="menu-sub" href="vocab.html">Library</a>
+        </div>
+        <div class="content">
+          <form action="">
+            <div class="container-tag">
+              <div class="tag normal active">Normal</div>
+              <div class="tag fun">Funny</div>
+              <div class="tag drama">Drama</div>
+            </div>
+            <div class="input-kanj">
+              <input type="text" id="kanji" placeholder="Enter kanji" />
+              <span id="errorMessage" class="error-message"></span>
+              <button type="button" id="create">Create</button>
+            </div>
+          </form>
+          <div class="loader"></div>
+          <div class="noti">please enter kanji again</div>
+          <div class="output-container">
+            <!-- <div class="output">
+                        <div class="output-kanji">
+                            <div class="output-kanji-up">
+                                <div class="output-kanji-up-left">
+                                    <p id="output-kanji-ne" class="output-kanji-up-left-text"></p>
+                                </div>
+                                <div class="output-kanji-up-right">
+                                    <div class="output-kanji-up-right-title">
+                                        <h3>Meaning:</h3>
+                                        <h3>Kunyomi:</h3>
+                                        <h3>Onyomi:</h3>
+                                        <h3>Composition:</h3>
+                                    </div>
+                                    <div class="output-kanji-up-right-mean">
+                                        <p id="mean"></p>
+                                        <p id="kun"></p>
+                                        <p id="on"></p>
+                                        <p id="composition"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="output-kanji-down">
+                                <p id="story">
+                                    If a person opens his MOUTH (口) and speaks like an ARROW (矢), he KNOWS (知る)!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="save-reload">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/story.js"></script>
+    <!-- <script src="./js/vocab.js"></script> -->
+  </body>
+</html>
